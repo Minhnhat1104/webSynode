@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
@@ -34,7 +39,7 @@ html {
 
 .col-2 {
     width: 50%;
-    padding: 15px;
+    padding: 0px 15px;
 }
 
 ul {

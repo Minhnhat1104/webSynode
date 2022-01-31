@@ -83,7 +83,7 @@
 }
 
 .home-content {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     /* width: 450px; */
     text-align: left;
     /* padding-left: 330px; */
