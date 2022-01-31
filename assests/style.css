@@ -10,6 +10,7 @@
     height: 85px;
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1);
     background-color: var(--white-color);
+    padding: 0px 110px;
 }
 
 .header__img {
@@ -79,35 +80,46 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 .home-content {
-    width: 650px;
-    flex-grow: 2;
-    float: right;
-    padding-left: 15%;
+    flex-grow: 1;
+    /* width: 450px; */
+    text-align: left;
+    /* padding-left: 330px; */
 }
 .home-title {
-    font-size: 4.0rem;
-    line-height: 5.0rem;
+    font-size: 5.4rem;
+    line-height: 7.4rem;
     font-weight: 550;
+    color: var(--title-color);
 }
 .home-subtitle {
-    margin-top: 48px;
-    font-size: 1.6rem;
-    line-height: 2.0rem;
+    margin-top: 40px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
     color: var(--text-color);
 }
 .home-buttons {
     margin-top: 60px;
     display: flex;
-    justify-content: space-around;
+}
+
+.home-btn-start {
+    background-color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.home-btn-start .btn-link {
+    color: var(--white-color);
+}
+
+.home-btn-icon {
+    margin-right: 6px;
 }
 
 .home-img-fluid {
-    flex-grow: 0;
-    width: 60%;
+    flex-grow: 1;
 }
 
 .home-img {
@@ -138,6 +150,7 @@
 
 .page2-img-fluid {
     width: 50%;
+
 }
 
 .page2-img {
@@ -158,6 +171,60 @@
 .page2-subtitle {
     margin-top: 48px;
     font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--text-color);
+}
+
+/* homepage3 */
+
+.page3-title {
+    font-size: 5.0rem;
+    font-weight: 550;
+    line-height: 7.0rem;
+    padding: 60px 0px;
+    color: var(--title-color);
+}
+
+.page3-box-list{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.page3-box-item{
+    display: flex;
+    transition: transform linear 0.2s, box-shadow linear 0.2s;
+    padding: 37px 30px;
+}
+
+.page3-box-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px 0px rgba(149, 49, 243, 0.1);
+}
+
+.page3-img-fluid {
+    padding: 25px;
+    border-radius: 100%;
+    border: 2px solid #ccc;
+    width: fit-content;
+}
+
+.page3-box-img{
+    width: 58px;
+}
+
+.page3-box-content {
+    margin-left: 20px;
+    padding-right: 40px;
+}
+
+.page3-box-title{
+    margin-bottom: 18px;
+    font-size: 1.6rem;
+    font-weight: 550;
+}
+
+.page3-box-subtitle{
+    font-size: 1.4rem;
+    font-weight: 400;
     line-height: 2.4rem;
     color: var(--text-color);
 }

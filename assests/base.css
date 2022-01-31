@@ -1,4 +1,5 @@
 :root {
+    --title-color: #363636;
     --text-color: #7f7f7f;
     --white-color: #fff;
     --primary-color: #99d3df;
@@ -17,6 +18,25 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-2 {
+    width: 50%;
+    padding: 15px;
+}
+
 ul {
     list-style-type: none;
     padding: 0px;
@@ -26,7 +46,7 @@ ul {
     display: block;
     border-style: none;
     background-color: var(--white-color);
-    border: 3px solid var(--primary-color);
+    border: 2px solid var(--primary-color);
     border-radius: 4px;
 }
 
@@ -36,6 +56,7 @@ ul {
     padding: 14px 36px;
     text-decoration: none;
     color: var(--primary-color);
+    font-weight: 700;
 }
 
 .btn:hover {
@@ -45,3 +66,12 @@ ul {
 .btn:hover .btn-link {
     color: var(--white-color);
 }
+
+/* @keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+} */
