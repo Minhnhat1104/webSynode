@@ -23,6 +23,7 @@ html {
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .app {
