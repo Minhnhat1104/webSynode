@@ -70,6 +70,11 @@
 
 /* Home */
 
+html {
+    background-image: url(./img/homeBackground.png);
+    background-repeat: no-repeat;
+}
+
 
 #home {
     width: 1200px;
