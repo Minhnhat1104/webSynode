@@ -22,6 +22,7 @@ html {
     font-size: 62.5%;
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .app {
@@ -35,7 +36,39 @@ html {
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
+    width: 1200px;
 }
+
+.c-1 {
+    padding: 0px 15px;
+    width: 8.33333%;
+}
+
+.c-2 {
+    padding: 0px 15px;
+    width: 16.66667%;
+}
+
+.c-3 {
+    padding: 0px 15px;
+    width: 25%;
+}
+
+.c-4 {
+    padding: 0px 15px;
+    width: 33.33333%;
+}
+
+.c-5 {
+    padding: 0px 15px;
+    width: 41.66667%;
+}
+
+.c-6 {
+    padding: 0px 15px;
+    width: 50%;
+}
+
 
 .col-2 {
     width: 50%;
@@ -71,11 +104,11 @@ ul {
 
 .btn-link {
     display: block;
-    font-size: 1.4rem;
-    padding: 14px 36px;
+    font-size: 1.6rem;
     text-decoration: none;
     color: var(--primary-color);
     font-weight: 700;
+    padding: 18px 36px;
 }
 
 .btn:hover {
