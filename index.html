@@ -19,6 +19,7 @@
     <div class="app">
         <header id = "header">
             <img src="./assests/img/headerImg.svg" alt="Synode-Label-img" class = "header__img">
+            <input type="checkbox" name="menu-opener" id="menu-opener" class="menu-opener" value="open">
             <ul class="navbar-list">
                 <li class="navbar-item navbar-item--active">
                     <a href="#home" class="navbar-item-link">HOME</a> 
@@ -34,11 +35,14 @@
                 </li>
             </ul>
             <button class="btn login-btn"><a href="#" class="btn-link login-btn-link">Login</a></button>
+            <label class="btn menubtn" for="menu-opener">
+                <i class="fas fa-bars menu-btn__icon"></i>
+            </label>
         </header>
 
         <div class="home" id = "home">
 
-            <div class="home-intro row">
+            <div class="row home-intro">
                 <div class="home-content col-2">
                     <div class="home-title">Interactive Step-by-Step 3D Assembly Instructions</div>
                     <div class="home-subtitle">
@@ -324,7 +328,9 @@
                     </div>
                 </div>
 
-                <div class="feature-analytics">
+            </div>
+            <div class="feature-analytics">
+                <div class="feature-analytics-container">
                     <div class="analytics-img-fluid">
                         <img src="./assests/img/Features/analytics.png" alt="analytics-img" class="analytics-img">
                     </div>
@@ -391,12 +397,12 @@
             </div>
         </div>
 
-        <ul class="slideimage__list">
-            <li class="slideimage__item">
-                <div class="aboveWhoUseNode__img-1"></div>
+        <ul class="slideimage__list row">
+            <li class="slideimage__item col-2">
+                <div class="slideimage__item__img aboveWhoUseNode__img-1"></div>
             </li>
-            <li class="slideimage__item">
-                <div class="aboveWhoUseNode__img-2"></div>
+            <li class="slideimage__item col-2">
+                <div class="slideimage__item__img aboveWhoUseNode__img-2"></div>
             </li>
         </ul>
 
@@ -475,16 +481,18 @@
 
         <div class="ready">
             <div class="ready__left">
-                <div class="ready__title">Ready to get started?</div>
-                <div class="ready__subtitle">Reach to our 3D experts now and start delighting your clients with amazing 3d step-by-step assembly instructions.</div>
-                <button class="btn ready__btn">
-                    <a href="/" class="btn-link">
-                        <i class="fas fa-hand-paper"></i>
-                        Say hello!
-                    </a>
-                </button>
+                <div class="ready__left__content">
+                    <div class="ready__title">Ready to get started?</div>
+                    <div class="ready__subtitle">Reach to our 3D experts now and start delighting your clients with amazing 3d step-by-step assembly instructions.</div>
+                    <button class="btn ready__btn">
+                        <a href="/" class="btn-link">
+                            <i class="fas fa-hand-paper"></i>
+                            Say hello!
+                        </a>
+                    </button>
+                </div>
                 <div class="ready__right">
-                    <img src="./assests/img/ready/giangBai.png" alt="" class="ready__img-fluid">
+                    <img src="./assests/img/ready/giangBai.png" alt="" class="ready__img">
                 </div>
             </div>
         </div>
