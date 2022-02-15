@@ -502,6 +502,20 @@ html {
     color: var(--text-color);
     background-color: var(--white-color);
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.05);
+    animation: helpContentShow linear 0.5s;
+    transform-origin: 0% -50%;
+    will-change: tranform, opacity;
+}
+
+@keyframes helpContentShow {
+    from {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    to {
+        transform: scaleY(1);
+        opacity: 1;
+    }
 }
 
 .help-img-fluid {
@@ -642,7 +656,12 @@ html {
 }
 
 .orange-img-fluid {
+    display: none;
     width: 100%;
+}
+
+.orange-img-fluid.active {
+    display: block;
 }
 
 .orange-img {
@@ -830,6 +849,7 @@ html {
 
 .footer_list {
     padding-bottom: 80px;    
+    margin: auto;
 }
 
 .logo_img {

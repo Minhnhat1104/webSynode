@@ -1,10 +1,53 @@
-var scrollDiv = document.createElement("div");
-scrollDiv.className = "scrollbar-measure";
-document.body.appendChild(scrollDiv);
+// function
+let handleOrangePage = function() {
+    let orangePageItems = document.querySelectorAll('.orange-img__item')
+    let orangeIndexItems =document.querySelectorAll('.orange-index-item')
+    let orangeItems = document.querySelectorAll('.orange-item')
+    Array.from(orangeIndexItems).forEach(function(orangeIndexItem, index) {
+        orangeIndexItem.onclick = function () {
+            let orangePageActiveItem = document.querySelector('.orange-img__item.active')
+            orangePageActiveItem.classList.remove('active')
+            orangePageItems[index].classList.add('active')
+    
+            let orangeIndexActiveItem =document.querySelector('.orange-index-item.active')
+            orangeIndexActiveItem.classList.remove('active')
+            orangeIndexItems[index].classList.add('active')
+    
+            let orangeActiveItem = document.querySelector('.orange-item.active')
+            orangeActiveItem.classList.remove('active')
+            orangeItems[index].classList.add('active')
+        }
+    })
+    
+    Array.from(orangeItems).forEach(function(orangeItem, index) {
+        orangeItem.onclick = function () {
+            let orangePageActiveItem = document.querySelector('.orange-img__item.active')
+            orangePageActiveItem.classList.remove('active')
+            orangePageItems[index].classList.add('active')
+    
+            let orangeIndexActiveItem =document.querySelector('.orange-index-item.active')
+            orangeIndexActiveItem.classList.remove('active')
+            orangeIndexItems[index].classList.add('active')
+    
+            let orangeActiveItem = document.querySelector('.orange-item.active')
+            orangeActiveItem.classList.remove('active')
+            orangeItems[index].classList.add('active')
+        }
+    })
+}
 
-// Get the scrollbar width
-var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
-console.warn(scrollbarWidth);
+let handleFeatureHelp = function() {
+    let helpItems = document.querySelectorAll('.help-item')
+    Array.from(helpItems).forEach(function(helpItem, index) {
+        helpItem.onclick = function() {
+            document.querySelector('.help-item.active').classList.remove('active')
+            helpItems[index].classList.add('active')
+        }
+    })
+}
 
-// Delete the div
-document.body.removeChild(scrollDiv);
+
+
+//execute funcitons
+handleOrangePage()
+handleFeatureHelp()
