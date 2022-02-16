@@ -38,10 +38,19 @@ let handleOrangePage = function() {
 
 let handleFeatureHelp = function() {
     let helpItems = document.querySelectorAll('.help-item')
+    let helpItemIconMinus = 
     Array.from(helpItems).forEach(function(helpItem, index) {
         helpItem.onclick = function() {
-            document.querySelector('.help-item.active').classList.remove('active')
+            let activeItem = document.querySelector('.help-item.active')
+            if (activeItem) {
+                activeItem.classList.remove('active')
+            }
             helpItems[index].classList.add('active')
+        }
+        let minusIcon = helpItem.querySelector('.help-item-icon-minus')
+        minusIcon.onclick = function(e) {
+            helpItem.classList.remove('active')
+            e.stopPropagation();
         }
     })
 }

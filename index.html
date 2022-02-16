@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assests/grid.css">
     <link rel="stylesheet" href="./assests/base.css">
     <link rel="stylesheet" href="./assests/style.css">
     <link rel="stylesheet" href="./assests/responsive.css">
@@ -405,12 +407,12 @@
             </div>
         </div>
 
-        <ul class="slideimage__list row">
-            <li class="slideimage__item col-2">
-                <div class="slideimage__item__img aboveWhoUseNode__img-1"></div>
+        <ul class="slideimage__list">
+            <li class="slideimage__item">
+                <img src = "./assests/img/aboveWhoUseNode-1.jpg" class="slideimage__item__img">
             </li>
-            <li class="slideimage__item col-2">
-                <div class="slideimage__item__img aboveWhoUseNode__img-2"></div>
+            <li class="slideimage__item">
+                <img src = "./assests/img/aboveWhoUseNode-2.jpg" class="slideimage__item__img">
             </li>
         </ul>
 
@@ -505,15 +507,15 @@
             </div>
         </div>
 
-        <div class="footer">
+        <div class="footer grid wide">
             <ul class="row footer_list">
-                <li class="c-4 footer__item">
+                <li class="col l-4 m-4 c-12  footer__item">
                     <div class="logo_img">
                         <img src="./assests/img/headerImg.svg" alt="123" class="footer__logo">
                     </div>
                     <div class="subtitle">We leverage cutting-edge technologies to revolutionize the way we create, distribute and follow instructions.</div>
                 </li>
-                <li class="c-2 footer__item">
+                <li class="col l-2 m-2 c-12  footer__item">
                     <div class="item_title">Who we are</div>
                     <ul class="who__list">
                         <li class="who__item">
@@ -533,7 +535,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="c-2 footer__item">
+                <li class="col l-2 m-2 c-12  footer__item">
                     <div class="item_title">Quick links</div>
                     <ul class="">
                         <li class="who__item">
@@ -548,7 +550,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="c-4 footer__item footer__item--language">
+                <li class="col l-4 m-4 c-12  footer__item footer__item--language">
                     <div class="item_title">Change Language:</div>
                     <select class = "language__selector" name="language" id="language">
                         <option value="english">English</option>
@@ -559,28 +561,30 @@
         </div>
 
         <div class="footer__bottom">
-            <div class="footer__bottom__container">
-                <div class="right-copy">
-                    © 2022, <strong>Synode</strong>. All Rights Reserved.
+            <div class="grid wide">
+                <div class="footer__bottom__container">
+                    <div class="right-copy">
+                        © 2022, <strong>Synode</strong>. All Rights Reserved.
+                    </div>
+        
+                    <ul class="social-links__list">
+                        <li class="social-link__item">
+                            <a href="facebook.com" class="item__link">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li class="social-link__item">
+                            <a href="twitter.com" class="item__link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="social-link__item">
+                            <a href="instagram.com" class="item__link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-    
-                <ul class="social-links__list">
-                    <li class="social-link__item">
-                        <a href="facebook.com" class="item__link">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                    </li>
-                    <li class="social-link__item">
-                        <a href="twitter.com" class="item__link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="social-link__item">
-                        <a href="instagram.com" class="item__link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
